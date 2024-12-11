@@ -19,9 +19,9 @@ def main():
     # Set up the execution environment
     env = StreamExecutionEnvironment.get_execution_environment()
     env.set_parallelism(1)
-    env.add_jars("file:///Users/oskari/Code/CS-E4780%20Scalable%20Systems%20and%20Data%20Management/attempt2/flink-connector-kafka-3.4.0-1.20.jar")
-    env.add_classpaths("file:///Users/oskari/Code/CS-E4780%20Scalable%20Systems%20and%20Data%20Management/attempt2/flink-connector-kafka-3.4.0-1.20.jar")
-    env.add_jars("file:///Users/oskari/Code/CS-E4780%20Scalable%20Systems%20and%20Data%20Management/attempt2/kafka-clients-3.9.0.jar")
+    env.add_jars("file:///flink-connector-kafka-3.4.0-1.20.jar")
+    env.add_classpaths("file:///flink-connector-kafka-3.4.0-1.20.jar")
+    env.add_jars("file:///kafka-clients-3.9.0.jar")
 
     # Define Kafka consumer properties
     kafka_consumer_props = {
